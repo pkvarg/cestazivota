@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = ({ language }) => {
   return (
-    <div className='text-center  text-[20px] pt-[95px] pb-[25px]'>
+    <div className='text-center text-[16px] lg:text-[20px] pt-[95px] pb-[25px]'>
       <div className='flex flex-col lg:flex-row justify-center gap-0 lg:gap-2 pt-4 mb-8'>
         {language === 'slovak' || language === 'czech' ? (
           <>

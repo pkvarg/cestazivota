@@ -17,7 +17,7 @@ const Section02 = ({ language }) => {
 
   return (
     <div className='section2 pt-[15%] lg:pt-[6%]'>
-      <h3 className='text-[25px] lg:text-[30px]  text-center'>
+      <h3 className='text-[22.50px] lg:text-[30px]  text-center'>
         {content.s2Title}
         {/* Svedectvo môjho kamaráta Jimmyho Synovca */}
       </h3>

@@ -24,7 +24,7 @@ const Section04 = ({ language }) => {
 
   return (
     <div className='section4'>
-      <h3 className='text-[22.5px] lg:text-[25px] pt-[75px] text-center mx-[5%] lg:mx-0'>
+      <h3 className='text-[16px] lg:text-[25px] pt-[40px] lg:pt-[80px] text-center mx-[5%] lg:mx-0'>
         {content.s4Text1}
         {/* Viac sa dočítaš v tejto knihe */}
       </h3>
@@ -40,7 +40,7 @@ const Section04 = ({ language }) => {
           <SliderEn />
         )}
       </div>
-      <h3 className='text-[20px] lg:text-[22.5px] text-center'>
+      <h3 className='text-[16px] lg:text-[22.5px] text-center'>
         {language === 'slovak' && (
           <p>
             Vytlačenú bezplatnú knihu si pýtaj u{' '}

@@ -19,8 +19,8 @@ const Section05 = ({ language }) => {
   })
 
   return (
-    <div className='section5 text-[20px] lg:text-[22.5px] text-justify pt-[80px]'>
-      <div className='text-[20px] lg:text-[22.5px] text-justify mx-[5%]'>
+    <div className='section5 text-[16px] lg:text-[22.5px] text-justify pt-[40px] lg:pt-[80px]'>
+      <div className='mx-[5%]'>
         <p>
           {content.s3Text3}
           {/* Evanjelium neznamená “Uver, inak pôjdeš do pekla!”, ale ”Uver, lebo
@@ -31,13 +31,13 @@ const Section05 = ({ language }) => {
             smrti bezbožného, ale v tom, že sa bezbožný odvráti od svojho
             spôsobu života a bude žiť. */}{' '}
           </span>
-          <span className='text-[15px] italic'>
+          <span className='text-[12px] lg:text-[15px] italic'>
             {content.s3Ref6}
             {/* Ezechiel 33:11 */}
           </span>
         </p>
       </div>
-      <div className='text-[20px] lg:text-[22.5px] text-justify mt-6 mx-[5%]'>
+      <div className='text-[16px] lg:text-[22.5px] text-justify mt-6 mx-[5%]'>
         <p>
           {content.s3Text4}
           {/* Kajaj sa zo svojich hriechov a úprimne zo srdca ústami vyznaj:
@@ -119,7 +119,7 @@ const Section05 = ({ language }) => {
             niet v ňom pravdy. Ak niekto miluje svet (žiadosť tela, žiadosť očí,
             pýchu života), nieto v ňom lásky k Otcovi.{' '} */}
           </span>
-          <span className='text-[15px]'>
+          <span className='text-[12px] lg:text-[15px]'>
             {' '}
             {content.s5Ref1} {/* Prvý Jánov 2:4,15 */}
           </span>

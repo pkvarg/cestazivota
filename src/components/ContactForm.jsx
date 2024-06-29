@@ -124,7 +124,7 @@ const ContactForm = ({ language, setShowContact }) => {
               <form
                 ref={form}
                 onSubmit={sendEmail}
-                className='flex flex-col gap-[2.5px] text-[22.5px]'
+                className='flex flex-col gap-[2.5px] text-[16px] lg:text-[22.5px]'
               >
                 <div className='flex flex-col justify-center'>
                   <label className='form-label my-[2.5%] text-left'>
@@ -174,7 +174,7 @@ const ContactForm = ({ language, setShowContact }) => {
                         {content.contactGdpr}{' '}
                       </button>
                       {showGdpr && (
-                        <p className='w-[300px] lg:w-[330px] text-[20px] text-left'>
+                        <p className='w-[300px] lg:w-[330px] text-[16px] lg:text-[20px] text-left'>
                           {content.gdpr1} <br /> {content.gdpr2}
                         </p>
                       )}
@@ -194,7 +194,7 @@ const ContactForm = ({ language, setShowContact }) => {
                   onChange={(e) => setPasswordGroupTwo(e.target.value)}
                 />
                 <button
-                  className='text-[25px] lg:text-[22.5px] lg:w-[33%] lg:ml-[auto] lg:mr-[auto] mt-10 rounded-xl border border-white hover:text-[#000000] hover:bg-white'
+                  className='text-[20px] lg:text-[22.5px] lg:w-[33%] lg:ml-[auto] lg:mr-[auto] mt-10 rounded-xl border border-white hover:text-[#000000] hover:bg-white'
                   type='submit'
                   value='Send'
                 >
