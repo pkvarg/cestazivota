@@ -23,7 +23,7 @@ const Section04 = ({ language }) => {
   }
 
   return (
-    <div className='section4'>
+    <div className='section4 '>
       <h3 className='text-[16px] lg:text-[25px] pt-[40px] lg:pt-[80px] text-center mx-[5%] lg:mx-0'>
         {content.s4Text1}
         {/* Viac sa dočítaš v tejto knihe */}

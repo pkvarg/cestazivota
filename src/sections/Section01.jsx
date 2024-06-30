@@ -16,15 +16,15 @@ const Section01 = ({ language }) => {
   })
 
   return (
-    <div className='hero px-[5%]'>
+    <div className='hero px-[5%] leading-[18px] lg:leading-[34px]'>
       <LanguageBar />
       <div className='text-[30px] lg:text-[40px] text-center pt-[12%] lg:pt-[5%]'>
-        <h1 className='textgradient'>
+        <h1 className='textgradient leading-[30px] lg:leading-[40px] mt-4 lg:mt-0'>
           {content.heroTitle}
           {/* Uver pravde, buď oslobodený od hriechu a získaj večný život! */}
         </h1>
       </div>
-      <div className='text-[16px] lg:text-[22.5px] text-justify mt-8'>
+      <div className='text-[16px] lg:text-[22.5px] text-justify mt-4 lg:mt-8'>
         <p>
           {content.heroText1}{' '}
           {/* Ak ešte neveríš v Boha, Jeho Syna a Ducha Svätého, prosím uvedom si,

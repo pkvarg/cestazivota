@@ -19,7 +19,7 @@ const Section05 = ({ language }) => {
   })
 
   return (
-    <div className='section5 text-[16px] lg:text-[22.5px] text-justify pt-[40px] lg:pt-[80px]'>
+    <div className='section5 text-[16px] lg:text-[22.5px] text-justify pt-[40px] lg:pt-[80px] leading-[18px] lg:leading-[34px]'>
       <div className='mx-[5%]'>
         <p>
           {content.s3Text3}

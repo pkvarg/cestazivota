@@ -52,13 +52,13 @@ const Home = () => {
         style={{
           background: '#782777',
           color: '#d7cde6',
-          fontSize: '18px',
+          fontSize: '16px',
           textAlign: 'start',
         }}
         buttonStyle={{
           background: '#1d9f2f',
           color: '#fff',
-          fontSize: '18px',
+          fontSize: '16px',
           padding: '7px',
           // borderRadius: '25px',
         }}

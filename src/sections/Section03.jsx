@@ -15,7 +15,7 @@ const Section03 = ({ language }) => {
   })
 
   return (
-    <div className='section3 px-[5%]'>
+    <div className='section3 px-[5%] leading-[18px] lg:leading-[34px]'>
       <div className='text-[16px] lg:text-[22.5px] text-justify'>
         <p>
           {content.heroText6}
