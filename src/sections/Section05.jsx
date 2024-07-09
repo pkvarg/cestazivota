@@ -19,7 +19,7 @@ const Section05 = ({ language }) => {
   })
 
   return (
-    <div className='section5 text-[16px] lg:text-[22.5px] text-justify pt-[40px] lg:pt-[80px] leading-[18px] lg:leading-[34px]'>
+    <div className='section5 text-[16px] lg:text-[22.5px] text-justify pt-[40px] lg:pt-[80px] leading-[20px] lg:leading-[34px]'>
       <div className='mx-[5%]'>
         <p>
           {content.s3Text3}
@@ -38,16 +38,26 @@ const Section05 = ({ language }) => {
         </p>
       </div>
       <div className='text-[16px] lg:text-[22.5px] text-justify mt-6 mx-[5%]'>
-        <p>
-          {content.s3Text4}
-          {/* Kajaj sa zo svojich hriechov a úprimne zo srdca ústami vyznaj:
+        <p>{content.s3Text4} </p>
+        <div className='flex flex-col items-center justify-center mt-4 italic'>
+          <span>"{content.s3Text4a}</span>
+          <span> {content.s3Text4b}</span>
+          <span>{content.s3Text4c}</span>
+          <span> {content.s3Text4d}</span>
+          <span> {content.s3Text4e}</span>
+          <span>{content.s3Text4f}</span>
+          <span>{content.s3Text4g}</span>
+          <span> {content.s3Text4h}</span>
+          <span>{content.s3Text4i}"</span>
+        </div>
+
+        {/* Kajaj sa zo svojich hriechov a úprimne zo srdca ústami vyznaj:
           “Nebeský Otče, ďakujem Ti, že si poslal Svojho Syna, aby niesol trest
           za moje hriechy. Verím, že Ježiš zomrel na kríži a tretí deň vstal z
           mŕtvych a žije. Vzdávam sa doterajšieho hriešneho spôsobu života.
           Prosím, odpusť mi všetky hriechy skrze krv Ježiša Krista. Ďakujem Ti,
           že si ma očistil. Ježišu, vyznávam Ťa ako môjho Pána a Spasiteľa.
           Prosím, meň moje srdce a formuj môj charakter. Amen.”{' '} */}
-        </p>
       </div>
       <div className='mx-[5%] mt-6'>
         <p>

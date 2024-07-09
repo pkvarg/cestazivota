@@ -16,7 +16,7 @@ const Section01 = ({ language }) => {
   })
 
   return (
-    <div className='hero px-[5%] leading-[18px] lg:leading-[34px]'>
+    <div className='hero px-[5%] leading-[20px] lg:leading-[34px]'>
       <LanguageBar />
       <div className='text-[30px] lg:text-[40px] text-center pt-[12%] lg:pt-[5%]'>
         <h1 className='textgradient leading-[30px] lg:leading-[40px] mt-4 lg:mt-0'>

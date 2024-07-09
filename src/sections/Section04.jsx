@@ -43,7 +43,7 @@ const Section04 = ({ language }) => {
       <h3 className='text-[16px] lg:text-[22.5px] text-center'>
         {language === 'slovak' && (
           <p>
-            Vytlačenú bezplatnú knihu si pýtaj u{' '}
+            Bezplatnú plnú verziu knihu si pýtaj u{' '}
             <button className='underline' onClick={() => toggleShowContact()}>
               mňa
               {/* {content.s4Text2} */}
@@ -56,12 +56,12 @@ const Section04 = ({ language }) => {
             <button className='underline' onClick={() => toggleShowContact()}>
               me
             </button>{' '}
-            for a printed free book
+            for the full version of the free book
           </p>
         )}
         {language === 'czech' && (
           <p>
-            Vytisknutou bezplatnou knihu si ptej u{' '}
+            Bezplatnou plnou verzi knihy si ptej u{' '}
             <button className='underline' onClick={() => toggleShowContact()}>
               mě
             </button>{' '}
