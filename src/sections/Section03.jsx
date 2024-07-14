@@ -46,7 +46,9 @@ const Section03 = ({ language }) => {
         <p>
           {content.s3Text1}
           <span className='italic'>{content.s3Text1add}</span>
-          <span className='text-[15px]'>{content.s3Text1addRef}</span>{' '}
+          <span className='text-[12px] lg:text-[15px]'>
+            {content.s3Text1addRef}
+          </span>{' '}
           {/* Ak sa rozhodneš ignorovať Jeho obeť a šancu na záchranu, budeš
           odsúdený. */}{' '}
           <span className='italic'>

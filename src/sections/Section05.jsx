@@ -39,16 +39,16 @@ const Section05 = ({ language }) => {
       </div>
       <div className='text-[16px] lg:text-[22.5px] text-justify mt-6 mx-[5%]'>
         <p>{content.s3Text4} </p>
-        <div className='flex flex-col items-center justify-center mt-4 italic'>
-          <span>"{content.s3Text4a}</span>
-          <span> {content.s3Text4b}</span>
-          <span>{content.s3Text4c}</span>
-          <span> {content.s3Text4d}</span>
-          <span> {content.s3Text4e}</span>
-          <span>{content.s3Text4f}</span>
-          <span>{content.s3Text4g}</span>
-          <span> {content.s3Text4h}</span>
-          <span>{content.s3Text4i}"</span>
+        <div className='flex flex-col  mt-4 italic'>
+          <span className='text-center'>"{content.s3Text4a}</span>
+          <span className='text-center'> {content.s3Text4b}</span>
+          <span className='text-center'>{content.s3Text4c}</span>
+          <span className='text-center'> {content.s3Text4d}</span>
+          <span className='text-center'> {content.s3Text4e}</span>
+          <span className='text-center'>{content.s3Text4f}</span>
+          <span className='text-center'>{content.s3Text4g}</span>
+          <span className='text-center'> {content.s3Text4h}</span>
+          <span className='text-center'>{content.s3Text4i}"</span>
         </div>
 
         {/* Kajaj sa zo svojich hriechov a úprimne zo srdca ústami vyznaj:
