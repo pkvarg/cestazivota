@@ -31,14 +31,25 @@ const Home = () => {
     },
   }
 
-  const increaseVisitorsCount = async () => {
-    const { data } = await axios.put(
-      `https://api.pictusweb.com/api/visitors/cesta/increase`,
-      // `http://localhost:2000/api/visitors/cesta/increase`,
-      config
-    )
-    console.log('vstrs:', data)
+  const apiUrl = 'https://hono-api.pictusweb.com/api/visitors/cz/increase'
+  //const apiUrl = 'http://localhost:3013/api/visitors/cz/increase'
+
+  const increaseVisitors = async () => {
+    try {
+      const { data } = await axios.put(apiUrl, {}, config)
+    } catch (error) {
+      console.error('Error tracking declined visitors:', error)
+    }
   }
+
+  // const increaseVisitorsCount = async () => {
+  //   const { data } = await axios.put(
+  //     `https://api.pictusweb.com/api/visitors/cesta/increase`,
+  //     // `http://localhost:2000/api/visitors/cesta/increase`,
+  //     config
+  //   )
+  //   console.log('vstrs:', data)
+  // }
 
   return (
     <>
@@ -48,7 +59,7 @@ const Home = () => {
       <Section04 language={language} />
       <Section05 language={language} />
       <CookieConsent
-        location='bottom'
+        location="bottom"
         style={{
           background: '#782777',
           color: '#d7cde6',
@@ -66,7 +77,7 @@ const Home = () => {
         expires={365}
         onAccept={() => {
           setCookieAccept(true)
-          increaseVisitorsCount()
+          increaseVisitors()
         }}
       >
         {content.cookiesText}
