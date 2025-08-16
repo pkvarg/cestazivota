@@ -41,6 +41,13 @@ const ContactForm = ({ language, setShowContact }) => {
   const [passwordGroupOne, setPasswordGroupOne] = useState(x)
   const [passwordGroupTwo, setPasswordGroupTwo] = useState(y)
 
+  // Debug logging for environment variables
+  console.log('ENV DEBUG - VITE_EMAILJS_SERVICE:', import.meta.env.VITE_EMAILJS_SERVICE)
+  console.log('ENV DEBUG - VITE_EMAILJS_TEMPLATE:', import.meta.env.VITE_EMAILJS_TEMPLATE)
+  console.log('ENV DEBUG - VITE_EMAILJS_USER:', import.meta.env.VITE_EMAILJS_USER)
+  console.log('ENV DEBUG - VITE_EMAIL_EXTRA_ONE:', import.meta.env.VITE_EMAIL_EXTRA_ONE)
+  console.log('ENV DEBUG - VITE_EMAIL_EXTRA_TWO:', import.meta.env.VITE_EMAIL_EXTRA_TWO)
+
   const config = {
     headers: {
       'Content-Type': 'application/json',

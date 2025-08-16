@@ -24,6 +24,12 @@ jobs:
         run: npm ci --legacy-peer-deps
 
       - name: Build project
+        env:
+          VITE_EMAILJS_SERVICE: ${{ vars.VITE_EMAILJS_SERVICE }}
+          VITE_EMAILJS_TEMPLATE: ${{ vars.VITE_EMAILJS_TEMPLATE }}
+          VITE_EMAILJS_USER: ${{ vars.VITE_EMAILJS_USER }}
+          VITE_EMAIL_EXTRA_ONE: ${{ vars.VITE_EMAIL_EXTRA_ONE }}
+          VITE_EMAIL_EXTRA_TWO: ${{ vars.VITE_EMAIL_EXTRA_TWO }}
         run: npm run build
 
       - name: Debug variables
