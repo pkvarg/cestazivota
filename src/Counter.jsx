@@ -1,14 +1,9 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { db } from '../firebaseConfig'
 import axios from 'axios'
-
-import { getDocs, collection } from 'firebase/firestore'
 
 const Counter = () => {
   const navigate = useNavigate()
-  // const [count, setCount] = useState(0)
-  // const countCollectionRef = collection(db, 'cestazivota')
 
   const [botsCount, setBotsCount] = useState(0)
   const [visitorsCount, setVisitorsCount] = useState(0)
