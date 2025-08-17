@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import Section01 from './sections/Section01'
 import Section02 from './sections/Section02'
 import Section03 from './sections/Section03'
 import Section04 from './sections/Section04'
 import Section05 from './sections/Section05'
-import CookieConsent from 'react-cookie-consent'
+import ConsentBanner from './components/ConsentBanner'
 import axios from 'axios'
 import Translation from './Home.json'
 import { useStateContext } from './context/StateContext'
+import { loadUmamiScript, checkConsentAndLoadAnalytics } from './utils/analytics'
 
 const Home = () => {
   const { language } = useStateContext()
   const [content, setContent] = useState({})
 
-  const [cookieAccept, setCookieAccept] = useState(false)
 
   useEffect(() => {
     if (language === 'slovak') {
@@ -23,7 +23,10 @@ const Home = () => {
     } else if (language === 'czech') {
       setContent(Translation.czech)
     }
-  })
+    
+    // Check if user has already consented and load analytics
+    checkConsentAndLoadAnalytics()
+  }, [language])
 
   const config = {
     headers: {
@@ -36,7 +39,7 @@ const Home = () => {
 
   const increaseVisitors = async () => {
     try {
-      const { data } = await axios.put(apiUrl, {}, config)
+      await axios.put(apiUrl, {}, config)
     } catch (error) {
       console.error('Error tracking declined visitors:', error)
     }
@@ -58,8 +61,17 @@ const Home = () => {
       <Section03 language={language} />
       <Section04 language={language} />
       <Section05 language={language} />
-      <CookieConsent
-        location="bottom"
+      <ConsentBanner
+        text={content.cookiesText}
+        buttonText={content.cookiesButton}
+        declineText={content.cookiesDecline}
+        onAccept={() => {
+          loadUmamiScript()
+          increaseVisitors()
+        }}
+        onDecline={() => {
+          // Analytics will not be loaded
+        }}
         style={{
           background: '#782777',
           color: '#d7cde6',
@@ -71,17 +83,14 @@ const Home = () => {
           color: '#fff',
           fontSize: '16px',
           padding: '7px',
-          // borderRadius: '25px',
         }}
-        buttonText={content.cookiesButton}
-        expires={365}
-        onAccept={() => {
-          setCookieAccept(true)
-          increaseVisitors()
+        declineButtonStyle={{
+          background: '#666',
+          color: '#fff',
+          fontSize: '16px',
+          padding: '7px',
         }}
-      >
-        {content.cookiesText}
-      </CookieConsent>
+      />
     </>
   )
 }

@@ -97,8 +97,9 @@
     "s5Anchor6": "duhovyrod.sk.",
     "s5Text10": "Prajem ti, aby si uveril pravde, ktorou je Božie Slovo a získal tak späť postavenie, ktoré ti patrí.",
 
-    "cookiesText": "Táto stránka nezhromažďuje žiadne údaje",
-    "cookiesButton": "Pokračovať",
+    "cookiesText": "Táto stránka používa anonymné analytické nástroje na zlepšenie používateľského zážitku. Nezhromažďujeme osobné údaje.",
+    "cookiesButton": "Súhlasiť",
+    "cookiesDecline": "Odmietnuť",
 
     "back": "Naspäť",
 
@@ -217,8 +218,9 @@
     "s5Anchor6": "duhovyrod.sk.",
     "s5Text10": "I wish you to believe the truth, which is God's Word, and thus regain the position that belongs to you.",
 
-    "cookiesText": "This site does not collect any information",
-    "cookiesButton": "Continue",
+    "cookiesText": "This site uses anonymous analytics to improve user experience. We do not collect personal information.",
+    "cookiesButton": "Accept",
+    "cookiesDecline": "Decline",
 
     "back": "Back",
 
@@ -338,8 +340,9 @@
     "s5Anchor6": "duhovyrod.sk.",
     "s5Text10": "Přeji ti, abys uvěřil pravdě, kterou je Boží Slovo a získal tak zpět postavení, které ti patří.",
 
-    "cookiesText": "Tato stránka neshromažďuje žádné údaje",
-    "cookiesButton": "Pokračovat",
+    "cookiesText": "Tato stránka používá anonymní analytické nástroje ke zlepšení uživatelského zážitku. Neshromažďujeme osobní údaje.",
+    "cookiesButton": "Souhlasit",
+    "cookiesDecline": "Odmítnout",
 
     "back": "Zpátky",
 
