@@ -71,6 +71,7 @@ const Home = () => {
         }}
         onDecline={() => {
           // Analytics will not be loaded
+          increaseVisitors()
         }}
         style={{
           background: '#782777',
